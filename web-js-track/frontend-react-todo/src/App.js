@@ -8,7 +8,7 @@ function App() {
         return (
             <div className="todo-item" key={toDo}>
                 <p>{toDo}</p>
-                <button data-testid={`eval-intem-done-${toDo}`} onClick={() => setAsDone(toDo)} className="check-button">✅</button>
+                <button data-testid={`eval-item-done-${toDo}`} onClick={() => setAsDone(toDo)} className="check-button">✅</button>
             </div>
         )
     })
