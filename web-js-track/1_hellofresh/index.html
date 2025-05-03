@@ -3,63 +3,19 @@
 
 <head>
   <title>Hello Fresh</title>
-  <style>
-    .container {
-      display: flex;
-      flex-direction: column;     /* Stack logo and box vertically */
-      justify-content: center;    /* Center vertically */
-      align-items: center;        /* Center horizontally */
-      background-color: #62ffb2;
-    }
-    .logo {
-      width: 20vw;  /* 20% of the viewport width */
-      max-width: 200px; /* Don't get too big on large screens */
-      height: auto; /* Keeps aspect ratio */
-    }
-    .box {
-      display: flex;
-      flex-direction: column;  /* Stack children vertically */
-      align-items: center;     /* Center text horizontally */
-      text-align: center;
-    }
-    form {
-      margin-top: 15px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
-
-    #form-field {
-      border: none;
-      width: 250px;
-      max-width: 80vw;
-    }
-
-    button {
-      width: 250px;
-      border: none;
-      background-color: #2ecc71;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #27ae60;
-    }
-  </style>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <!-- TODO: Implement the card here -->
-  <div class="container">
+  <div id="card" class="card">
     <img src="hellofreshlogo.png" alt="hello fresh logo" class="logo" id="logo" />
-    <div class="box" id="title">
+    <div class="title" id="title">
       <h2>DON'T MISS OUT</h2>
       <h1>Get 16 Free Meals</h1>
       <h2>plus FREE Shipping</h2>
@@ -68,11 +24,10 @@
       <form id="form">
         <input type="email" id="form-field" placeholder="Enter your email" required />
         <button type="submit" id="form-button">Claim Offer</button>
-        <a href="/">No thanks, I don't want free stuff</a>
+        <a href="#">No thanks, I don't want free stuff</a>
       </form>
-      
     </div>
-    <div class="disclaimer">
+    <div class="footer-text">
       <h3>By signing up, you agree to our Terms of Use and Privacy Policy</h3>
     </div>
   </div>
