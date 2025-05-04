@@ -15,7 +15,7 @@ export async function POST(req) {
       return NextResponse.json({ error: "Invalid sender name" }, { status: 400 });
     }
   */
-    const newMessage = { message, senderName, timestamp: Date.now() };
+    const newMessage = { message, senderName };
     chatMessages.push(newMessage);
 
     return NextResponse.json(newMessage);

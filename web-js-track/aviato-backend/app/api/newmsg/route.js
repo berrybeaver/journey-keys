@@ -18,7 +18,7 @@ export async function GET(request) {
   const lastTime = lastPolledAt[userId] || 0;
 
   const newMessages = chatMessages.filter(
-      (msg) => msg.senderName === otherUser && msg.timestamp > lastTime
+      (msg) => msg.senderName === otherUser
   );
 
   lastPolledAt[userId] = Date.now();
